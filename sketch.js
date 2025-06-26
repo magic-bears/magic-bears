@@ -3,6 +3,9 @@ let gameStart = false;
 let gameEnd = false;
 let score = 0;
 
+p5playConfig = {
+  showMenu: false
+
 function preload() {
   treeImg = loadImage("tree.png");
   die = loadSound("die.mp3");
@@ -15,7 +18,6 @@ function preload() {
 function setup() {
   createCanvas(400, 225).parent("canvas-container");
   pixelDensity(2);
-  p5play.hideMenu();
   pattern = random([0, 1, 2]);
   noStroke();
   noFill();
