@@ -15,6 +15,7 @@ function preload() {
 function setup() {
   createCanvas(400, 225).parent("canvas-container");
   pixelDensity(2);
+  p5play.hideMenu();
   pattern = random([0, 1, 2]);
   noStroke();
   noFill();
