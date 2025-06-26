@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
+  <meta charset="utf-8" />
   <script src="p5.min.js"></script>
-	<script src="planck.min.js"></script>
-	<script src="p5play.js"></script>
-    
-    <script src="p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+  <script src="planck.min.js"></script>
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <div id="canvas-container"></div>
-    <script src="sketch.js"></script>
-  </body>
-</html>
+  <!-- ✅ Add this BEFORE p5play.js -->
+  <script>
+    window.p5playConfig = {
+      showMenu: false,
+      showTitle: false
+    };
+  </script>
+
+  <script src="p5play.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
