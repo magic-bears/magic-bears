@@ -3,6 +3,12 @@ let gameStart = false;
 let gameEnd = false;
 let score = 0;
 
+// Disable the p5play menu and branding
+window.p5playConfig = {
+  showMenu: false,
+  showTitle: false
+};
+
 function preload() {
   treeImg = loadImage("tree.png");
   die = loadSound("die.mp3");
