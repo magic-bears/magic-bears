@@ -1,0 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+#canvas-container{
+  width:100vw;
+  height:56.25vw;
+  overflow:hidden;
+}
+
+#canvas-container canvas{
+  width:100%!important;
+  height:100%!important;
+}
